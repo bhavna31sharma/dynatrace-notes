@@ -37,4 +37,31 @@
     
 - Processes > All processes, can go within the process now to see detailed processes list          
 - If a problem is detected as Frequent Issue over a period of time- Dynatrace will send alert only if severity increases. TO turn it off, Settings > Anamoly Detection > Frequent Issue Detection. 
-- By default, host name come as DNS name. To rename, host > ... > just type the name
+- By default, host name come as DNS name. To rename, host > ... > Settings> General > just type the name
+    - Change all host name following rule, Settings > Monitoring - Host Naming > Add new Rule
+- For a host > Settings > Disk options (to exclude specific disk) or Exclude network traffic
+
+- Infra Observability > Host Networking
+    - Connections - Usually overloaded processes can have trouble accepting new connections resulting in refused connections or timeout connections
+    - Retransmissions usually should not be greater than 2%. If greater thatn 3% or 4%, can negatively impact user experience
+
+
+## Section-4-Cloud-Automation
+- Chat option top right corner
+- Cloud Automation - can contact the DT team to have this functionality
+- Under cloud automation, we have
+    - RELEASES
+    - Service-level Objectives
+    - Orchestration Projects
+- Release monitoring
+    - release stages of different deployed versions.
+    - versions across your deployment stages and prod environment
+    - known bugs and if these are release blockers
+    - risk related to specific versions
+    - how new version behaving compared to previous versions
+    - name, release version, build version, stage, product, latest validation
+        - can filter on problem impacted releases, secuurity vulns impacted releases, etc
+    - Under release events, all events eg: process restart, deployment events
+    - tracked issues - you can link your tracker here eg: jira tracker
+    - https://docs.dynatrace.com/docs/platform-modules/automations/release-monitoring/version-detection-strategies
+    
