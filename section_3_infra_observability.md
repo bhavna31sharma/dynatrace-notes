@@ -64,4 +64,44 @@
     - Under release events, all events eg: process restart, deployment events
     - tracked issues - you can link your tracker here eg: jira tracker
     - https://docs.dynatrace.com/docs/platform-modules/automations/release-monitoring/version-detection-strategies
-    
+- Service level objectives
+    - to find how reliable the service is
+    - service level indicator to define measure how successful the delivery is
+    - eg: cart loading time < 250 ms
+    - A Service Level Indicator (SLI) is a metric that quantifies the performance of a service in a way that is meaningful to users
+        - Examples
+            - availability - how much the service was available    
+            - latency - time taken to respond by the service - for db, %age of quueries completed inn less than 200 ms
+            - error rate - eg: for API, %age of requests resulting in 5XX sserver error
+            - Throughput
+            - Durability
+            - Coverage - eg: for CDN, %age of global regions having access to service
+    - Dynatrace New SLO
+        - Service side objective - service level availability, service-method availability, service performance (good mins/total mins)
+        - Client side objective - User experience, mobile crash-free users, synthetic availability (involves simulating user interactions with a service to test its performance and availability)
+        - You can define target, warning on available metrics
+
+ ## Section-5-Application-Observability  
+ - FrontEnd
+    - details by browser
+    - user type (real, synthetic, robots)
+    - geolocation breakkdown
+    - load actions (with avg time for loading a page)
+    - XHR actions (any user action)
+    - custom user actions (eg: durationtime of some javascript code)
+    - apdex rating (overall performannce ratings)
+    - number of errors per minute with error type
+    - resources (3rd party, 1st party, cdn)
+    - your services
+        - response time, requests, error rate, service flow
+    - availability
+    - composite metrics across response time (helpful to analyze where your performance should be) with compare to previous time frame option
+    - top 3 pages
+    - top 3 included domains
+    - top errors
+    - top 3 user actions
+    - problems 
+
+
+
+
